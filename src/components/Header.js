@@ -27,5 +27,3 @@ const Header = () => {
 }
 
 export default Header
-
-// ! Figure out how to add background image with Styled Components

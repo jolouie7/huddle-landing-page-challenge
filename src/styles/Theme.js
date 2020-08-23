@@ -8,7 +8,7 @@ const theme = {
     veryDarkCyan: "hsl(192, 100%, 9%)",
     grayishBlue: "hsl(208, 11%, 55%)"
   },
-  fonts: ["Poppin", "Open-Sans"],
+  fonts: ["Poppins", "Open Sans"],
   body: {
     fontSize: "18px",
   },
