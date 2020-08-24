@@ -11,13 +11,13 @@ export const Wrapper = styled.nav`
 `;
 
 export const Logo = styled.img`
-  margin-top: 15px;
+  margin-top: 5px;
   grid-column: 1/5;
   max-width: 100%
 `;
 
 export const TryFree = styled.button`
-  grid-column: 9/13;
+  grid-column: 8/13;
   max-width: 100%;
   color: ${props => props.theme.colors.veryDarkCyan};
   white-space: nowrap;

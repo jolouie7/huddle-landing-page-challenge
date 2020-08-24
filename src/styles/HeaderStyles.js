@@ -15,6 +15,7 @@ export const Title = styled.h1`
   font-weight: ${props => props.theme.weights[1]};
   margin: 0 15px 1rem 15px;
   color: ${props => props.theme.colors.veryDarkCyan};
+  font-size: 1.6rem;
 `
 
 export const Description = styled.p`
@@ -35,5 +36,5 @@ export const CallToAction = styled.button`
 `
 
 export const Image = styled.img`
-  width: 375px;
+  max-width: 100%
 `
