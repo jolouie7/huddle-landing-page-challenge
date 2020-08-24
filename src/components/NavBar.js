@@ -1,16 +1,19 @@
 import React from "react";
 import logo from "../images/logo.svg";
-import { Wrapper, Logo, TryFree, BtnContainer } from "../styles/NavBarStyles"
+import { Wrapper, Logo, TryFree, BtnContainer } from "../styles/NavBarStyles";
+import Theme from "../styles/Theme";
 
 const NavBar = () => {
   return (
     <div>
-      <Wrapper>
-        <Logo src={logo} />
-        <BtnContainer>
-          <TryFree>Try It Free</TryFree>
-        </BtnContainer>
-      </Wrapper>
+      <Theme>
+        <Wrapper>
+          <Logo src={logo} />
+          {/* <BtnContainer> */}
+            <TryFree>Try It Free</TryFree>
+          {/* </BtnContainer> */}
+        </Wrapper>
+      </Theme>
     </div>
   );
 };

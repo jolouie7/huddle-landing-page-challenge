@@ -1,13 +1,15 @@
 import React from 'react';
 import Theme from "../styles/Theme";
 import { Wrapper, Title, Description, CallToAction, Image } from "../styles/HeaderStyles";
-import headerImage from "../images/illustration-mockups.svg"
+import headerImage from "../images/illustration-mockups.svg";
+import Navbar from "../components/NavBar";
 
 const Header = () => {
   return (
     <div>
       <Theme>
         <Wrapper>
+          <Navbar />
           <Title>Build The Community Your Fans Will Love</Title>
           <Description>
             Huddle re-imagines the way we build communities. You have a voice,

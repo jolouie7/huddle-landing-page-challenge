@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import image from "../images/bg-hero-mobile.svg"
+import image from "../images/bg-hero-mobile.svg";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.header`
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
 export const Title = styled.h1`
   font-family: ${props => props.theme.fonts[0]};
   font-weight: ${props => props.theme.weights[1]};
+  margin: 0 15px 1rem 15px;
 `
 
 export const Description = styled.p`
@@ -25,9 +26,10 @@ export const CallToAction = styled.button`
   outline: none;
   border: none;
   padding: 1rem 5rem;
+  margin: 3rem 0;
   border-radius: 25px;
 `
 
 export const Image = styled.img`
-
+  width: 375px;
 `
