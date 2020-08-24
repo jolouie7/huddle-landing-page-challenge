@@ -19,7 +19,7 @@ export const Logo = styled.img`
 export const TryFree = styled.button`
   grid-column: 9/13;
   max-width: 100%;
-  color: ${props => props.theme.colors.VeryDarkCyan};
+  color: ${props => props.theme.colors.veryDarkCyan};
   white-space: nowrap;
   /* overflow: hidden; */
   border-radius: 50px;
