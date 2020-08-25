@@ -9,4 +9,4 @@
 - might need to a main wrapper for all 3 cards
 
 ### Footer
-[] fix the white space in the bottom of the footer
+[x] fix the white space in the bottom of the footer

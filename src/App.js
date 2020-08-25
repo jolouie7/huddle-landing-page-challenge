@@ -7,19 +7,22 @@ import MainCard3 from "./components/MainCard3";
 import Theme from "./styles/Theme";
 import FooterCard from "./components/FooterCard";
 import Footer from "./components/Footer";
+import {HTMLStyles, BodyStyles} from "./styles/HtmlStyles";
 
 const App = () => {
   return (
-    <div>
-      <Theme>
-        <Header />
-        <MainCard1 />
-        <MainCard2 />
-        <MainCard3 />
-        <FooterCard />
-        <Footer />
-      </Theme>
-    </div>
+      <HTMLStyles>
+        <BodyStyles>
+          <Theme>
+            <Header />
+            <MainCard1 />
+            <MainCard2 />
+            <MainCard3 />
+            <FooterCard />
+            <Footer />
+          </Theme>
+        </BodyStyles>
+      </HTMLStyles>
   );
 }
 

@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Wrapper = styled.footer`
   background-color: ${props => props.theme.colors.veryDarkCyan};
+  grid-row-start: 6;
+  grid-row-end: 7;
 `
 
 export const IconTextContainer = styled.div`
@@ -11,6 +13,8 @@ export const IconTextContainer = styled.div`
 
 export const Logo = styled.img`
   filter: brightness(0) invert(1);
+  padding-top: 1rem;
+  margin-left: 1rem;
 `
 
 export const FooterText = styled.p`
