@@ -5,5 +5,8 @@
 [] fix the header image to make it responsive instead of stuck at 375px
 
 ### Cards Section
-[] learn how to create cards with shadows
+[x] learn how to create cards with shadows
 - might need to a main wrapper for all 3 cards
+
+### Footer
+[] fix the white space in the bottom of the footer
