@@ -8,6 +8,11 @@ export const Wrapper = styled.div`
   margin: 2rem 1rem;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
   padding: 2rem 2rem 0 2rem;
+  z-index: 50;
+  position: absolute;
+  /* right: 0; */
+  top: -16%;
+  background-color: white;
 `;
 
 export const Title = styled.h1`

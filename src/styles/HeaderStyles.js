@@ -8,6 +8,7 @@ export const Wrapper = styled.header`
   text-align: center;
   background-image: url(${image});
   background-repeat: no-repeat;
+  background-color: ${props => props.theme.colors.veryPaleCyan};
 `
 
 export const Title = styled.h1`

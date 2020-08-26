@@ -16,10 +16,12 @@ import locationIcon from "../images/icon-location.svg";
 import phoneIcon from "../images/icon-phone.svg";
 import emailIcon from "../images/icon-email.svg";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
+import FooterCard from "./FooterCard";
 
 const Footer = () => {
   return (
     <Wrapper>
+      <FooterCard />
       <Logo src={logoImage} />
       <IconTextContainer>
         <Icon src={locationIcon} />

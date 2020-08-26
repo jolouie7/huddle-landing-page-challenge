@@ -4,6 +4,9 @@ export const Wrapper = styled.footer`
   background-color: ${props => props.theme.colors.veryDarkCyan};
   grid-row-start: 6;
   grid-row-end: 7;
+  padding-top: 200px;
+  position: relative;
+  margin-top: 200px;
 `
 
 export const IconTextContainer = styled.div`

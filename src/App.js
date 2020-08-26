@@ -18,7 +18,7 @@ const App = () => {
             <MainCard1 />
             <MainCard2 />
             <MainCard3 />
-            <FooterCard />
+            {/* <FooterCard /> */}
             <Footer />
           </Theme>
         </BodyStyles>
