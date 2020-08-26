@@ -1,6 +1,13 @@
-import React from 'react';
+import React from "react";
 import Theme from "../styles/Theme";
-import { Wrapper, Title, Description, CallToAction, Image } from "../styles/HeaderStyles";
+import {
+  Wrapper,
+  Title,
+  Description,
+  CallToAction,
+  ImageWrapper,
+  Image,
+} from "../styles/HeaderStyles";
 import headerImage from "../images/illustration-mockups.svg";
 import Navbar from "../components/NavBar";
 
@@ -19,13 +26,13 @@ const Header = () => {
           <div>
             <CallToAction>Get Started For Free</CallToAction>
           </div>
-          <div>
+          <ImageWrapper>
             <Image src={headerImage} />
-          </div>
+          </ImageWrapper>
         </Wrapper>
       </Theme>
     </div>
   );
-}
+};
 
-export default Header
+export default Header;

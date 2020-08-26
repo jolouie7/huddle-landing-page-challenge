@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   z-index: 50;
   position: absolute;
   /* right: 0; */
-  top: -16%;
+  top: -15%;
   background-color: white;
 `;
 
@@ -30,6 +30,6 @@ export const CallToAction = styled.button`
   outline: none;
   border: none;
   padding: 1rem 3rem;
-  margin: 3rem 0;
+  margin: 2rem 0;
   border-radius: 25px;
 `;

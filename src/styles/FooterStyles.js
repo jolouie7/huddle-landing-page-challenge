@@ -31,6 +31,7 @@ export const InfoList = styled.ul`
 `
 
 export const InfoDetail = styled.li`
+  font-family: ${props => props.theme.fonts[1]};
   list-style-type: none;
   color: white;
   padding: 1rem;

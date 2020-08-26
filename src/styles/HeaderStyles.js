@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import image from "../images/bg-hero-mobile.svg";
 
-// ! The background image is squished
 export const Wrapper = styled.header`
   display: flex;
   flex-direction: column;
@@ -23,6 +22,9 @@ export const Description = styled.p`
   font-family: ${props => props.theme.fonts[1]};
   font-weight: ${props => props.theme.weights[0]};
   color: ${props => props.theme.colors.veryDarkCyan};
+  margin: 0 1rem;
+  line-height: 35px;
+  letter-spacing: 1px;
 `
 
 export const CallToAction = styled.button`
@@ -36,6 +38,10 @@ export const CallToAction = styled.button`
   border-radius: 25px;
 `
 
+export const ImageWrapper = styled.div`
+  margin: 0 2rem 2rem 2rem;
+`
+
 export const Image = styled.img`
-  max-width: 100%
+  max-width: 100%;
 `
