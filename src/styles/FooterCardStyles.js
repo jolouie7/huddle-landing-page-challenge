@@ -13,6 +13,12 @@ export const Wrapper = styled.div`
   /* right: 0; */
   top: -15%;
   background-color: white;
+
+  @media (min-width: 1440px) {
+    padding: 2rem 10rem 0 10rem;
+    left: 25%;
+    right: 25%;
+  }
 `;
 
 export const Title = styled.h1`
@@ -21,6 +27,11 @@ export const Title = styled.h1`
   /* margin: 0 15px 1rem 15px; */
   color: ${(props) => props.theme.colors.veryDarkCyan};
   font-size: 1rem;
+
+  @media (min-width: 1440px) {
+    font-weight: 700;
+    font-size: 20px;
+  }
 `;
 
 export const CallToAction = styled.button`
@@ -30,6 +41,12 @@ export const CallToAction = styled.button`
   outline: none;
   border: none;
   padding: 1rem 3rem;
-  margin: 2rem 0;
+  margin: 1rem 0 2rem 0;
   border-radius: 25px;
+  font-family: ${(props) => props.theme.fonts[1]};
+
+  @media (min-width) {
+    padding: 1rem 4rem;
+    font-size: 1rem;
+  }
 `;

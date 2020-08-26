@@ -7,6 +7,18 @@ export const Wrapper = styled.footer`
   padding-top: 200px;
   position: relative;
   margin-top: 200px;
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+`
+
+export const FooterContainer = styled.div`
+  /* grid-column: 3/10; */
+  /* max-width: 100%;
+  margin: 0 auto; */
+  text-align: center;
 `
 
 export const IconTextContainer = styled.div`

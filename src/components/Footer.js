@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Wrapper,
+  FooterContainer,
   IconTextContainer,
   Logo,
   FooterText,
@@ -21,45 +22,49 @@ import FooterCard from "./FooterCard";
 const Footer = () => {
   return (
     <Wrapper>
-      <FooterCard />
-      <Logo src={logoImage} />
-      <IconTextContainer>
-        <Icon src={locationIcon} />
-        <FooterText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-        </FooterText>
-      </IconTextContainer>
-      <IconTextContainer>
-        <Icon src={phoneIcon} />
-        <FooterText>+1-543-123-4567</FooterText>
-      </IconTextContainer>
-      <IconTextContainer>
-        <Icon src={emailIcon} />
-        <FooterText>example@huddle.com</FooterText>
-      </IconTextContainer>
-      <InfoList>
-        <InfoDetail>About Us</InfoDetail>
-        <InfoDetail>What We Do</InfoDetail>
-        <InfoDetail>FAQ</InfoDetail>
-        <InfoDetail>Career</InfoDetail>
-        <InfoDetail>Blog</InfoDetail>
-        <InfoDetail>Contact Us</InfoDetail>
-      </InfoList>
-      <MediaIconContainer>
-        <MediaIconBorder>
-          <FaFacebookF style={{ color: "white", padding: "6px" }} />
-        </MediaIconBorder>
-        <MediaIconBorder>
-          <FaTwitter style={{ color: "white", padding: "6px" }} />
-        </MediaIconBorder>
-        <MediaIconBorder>
-          <FaFacebookF style={{ color: "white", padding: "6px" }} />
-        </MediaIconBorder>
-      </MediaIconContainer>
-      <Copyright>
-        &copy; Copyright 2018 Huddle. All rights reserved.
-      </Copyright>
+      <FooterContainer>
+        <FooterCard />
+      </FooterContainer>
+      <div>
+        <Logo src={logoImage} />
+        <IconTextContainer>
+          <Icon src={locationIcon} />
+          <FooterText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </FooterText>
+        </IconTextContainer>
+        <IconTextContainer>
+          <Icon src={phoneIcon} />
+          <FooterText>+1-543-123-4567</FooterText>
+        </IconTextContainer>
+        <IconTextContainer>
+          <Icon src={emailIcon} />
+          <FooterText>example@huddle.com</FooterText>
+        </IconTextContainer>
+        <InfoList>
+          <InfoDetail>About Us</InfoDetail>
+          <InfoDetail>What We Do</InfoDetail>
+          <InfoDetail>FAQ</InfoDetail>
+          <InfoDetail>Career</InfoDetail>
+          <InfoDetail>Blog</InfoDetail>
+          <InfoDetail>Contact Us</InfoDetail>
+        </InfoList>
+        <MediaIconContainer>
+          <MediaIconBorder>
+            <FaFacebookF style={{ color: "white", padding: "6px" }} />
+          </MediaIconBorder>
+          <MediaIconBorder>
+            <FaTwitter style={{ color: "white", padding: "6px" }} />
+          </MediaIconBorder>
+          <MediaIconBorder>
+            <FaFacebookF style={{ color: "white", padding: "6px" }} />
+          </MediaIconBorder>
+        </MediaIconContainer>
+        <Copyright>
+          &copy; Copyright 2018 Huddle. All rights reserved.
+        </Copyright>
+      </div>
     </Wrapper>
   );
 }
