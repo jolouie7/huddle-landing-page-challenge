@@ -8,6 +8,23 @@ export const Wrapper = styled.header`
   background-image: url(${image});
   background-repeat: no-repeat;
   background-color: ${props => props.theme.colors.veryPaleCyan};
+
+  
+`
+
+export const HeaderContainer = styled.div`
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 2rem;
+  }
+`
+
+export const TextWrapper = styled.div`
+  @media (min-width: 1440px) {
+    grid-column: 1/7;
+    text-align: left;
+  }
 `
 
 export const Title = styled.h1`
@@ -40,6 +57,10 @@ export const CallToAction = styled.button`
 
 export const ImageWrapper = styled.div`
   margin: 0 2rem 2rem 2rem;
+
+  @media (min-width: 1440px) {
+    grid-column: 7/13;
+  }
 `
 
 export const Image = styled.img`

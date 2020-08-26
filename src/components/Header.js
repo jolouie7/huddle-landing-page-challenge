@@ -2,6 +2,8 @@ import React from "react";
 import Theme from "../styles/Theme";
 import {
   Wrapper,
+  HeaderContainer,
+  TextWrapper,
   Title,
   Description,
   CallToAction,
@@ -17,18 +19,22 @@ const Header = () => {
       <Theme>
         <Wrapper>
           <Navbar />
-          <Title>Build The Community Your Fans Will Love</Title>
-          <Description>
-            Huddle re-imagines the way we build communities. You have a voice,
-            but so does your audience. Create connections with your users as you
-            engage in genuine discussion.
-          </Description>
-          <div>
-            <CallToAction>Get Started For Free</CallToAction>
-          </div>
-          <ImageWrapper>
-            <Image src={headerImage} />
-          </ImageWrapper>
+          <HeaderContainer>
+            <TextWrapper>
+              <Title>Build The Community Your Fans Will Love</Title>
+              <Description>
+                Huddle re-imagines the way we build communities. You have a
+                voice, but so does your audience. Create connections with your
+                users as you engage in genuine discussion.
+              </Description>
+              <div>
+                <CallToAction>Get Started For Free</CallToAction>
+              </div>
+            </TextWrapper>
+            <ImageWrapper>
+              <Image src={headerImage} />
+            </ImageWrapper>
+          </HeaderContainer>
         </Wrapper>
       </Theme>
     </div>

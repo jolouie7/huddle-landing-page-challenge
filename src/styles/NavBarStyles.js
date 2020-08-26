@@ -13,7 +13,12 @@ export const Wrapper = styled.nav`
 export const Logo = styled.img`
   margin-top: 5px;
   grid-column: 1/5;
-  max-width: 100%
+  max-width: 100%;
+
+  @media (min-width: 1440px) {
+    grid-column: 1/5;
+    margin-left: 2rem;
+  }
 `;
 
 export const TryFree = styled.button`
@@ -32,6 +37,11 @@ export const TryFree = styled.button`
   box-shadow: 2px 2px 5px #afe9ff;
   cursor: pointer;
   outline: none;
+
+  @media (min-width: 1440px) {
+    grid-column: 11/13;
+    margin-right: 2rem;
+  }
 `;
 
 export const BtnContainer = styled.div`
