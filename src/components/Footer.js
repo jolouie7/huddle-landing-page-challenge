@@ -1,14 +1,21 @@
 import React from 'react';
 import {
   Wrapper,
+  FooterCardContainer,
   FooterContainer,
+  FirstFooterCol,
   IconTextContainer,
+  LogoContainer,
   Logo,
   FooterText,
   InfoList,
+  AllListItems,
   InfoDetail,
+  First3InfoDetail,
+  Second3InfoDetail,
   Icon,
   MediaIconBorder,
+  SocialContainer,
   MediaIconContainer,
   Copyright,
 } from "../styles/FooterStyles";
@@ -16,55 +23,86 @@ import logoImage from "../images/logo.svg";
 import locationIcon from "../images/icon-location.svg";
 import phoneIcon from "../images/icon-phone.svg";
 import emailIcon from "../images/icon-email.svg";
-import { FaFacebookF, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import FooterCard from "./FooterCard";
 
 const Footer = () => {
   return (
     <Wrapper>
-      <FooterContainer>
+      <FooterCardContainer>
         <FooterCard />
-      </FooterContainer>
-      <div>
+      </FooterCardContainer>
+      <LogoContainer>
         <Logo src={logoImage} />
-        <IconTextContainer>
-          <Icon src={locationIcon} />
-          <FooterText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </FooterText>
-        </IconTextContainer>
-        <IconTextContainer>
-          <Icon src={phoneIcon} />
-          <FooterText>+1-543-123-4567</FooterText>
-        </IconTextContainer>
-        <IconTextContainer>
-          <Icon src={emailIcon} />
-          <FooterText>example@huddle.com</FooterText>
-        </IconTextContainer>
+      </LogoContainer>
+      <FooterContainer>
+        <div style={{display: "inline"}}>
+          <IconTextContainer>
+            <img
+              src={locationIcon}
+              alt="location icon"
+              style={{ color: "white", width: "auto" }}
+            />
+            <FooterText>
+              Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit,
+              sed do <br />
+              eiusmod tempor incididunt ut labore et <br /> dolore magna aliqua
+            </FooterText>
+          </IconTextContainer>
+          <IconTextContainer>
+            <img src={phoneIcon} alt="phone icon" style={{ color: "white" }} />
+            <FooterText>+1-543-123-4567</FooterText>
+          </IconTextContainer>
+          <IconTextContainer>
+            <img src={emailIcon} alt="email icon" style={{ color: "white" }} />
+            <FooterText>example@huddle.com</FooterText>
+          </IconTextContainer>
+        </div>
         <InfoList>
-          <InfoDetail>About Us</InfoDetail>
-          <InfoDetail>What We Do</InfoDetail>
-          <InfoDetail>FAQ</InfoDetail>
-          <InfoDetail>Career</InfoDetail>
-          <InfoDetail>Blog</InfoDetail>
-          <InfoDetail>Contact Us</InfoDetail>
+          <AllListItems>
+            <InfoDetail>About Us</InfoDetail>
+            <InfoDetail>What We Do</InfoDetail>
+            <InfoDetail>FAQ</InfoDetail>
+          </AllListItems>
+          <AllListItems>
+            <InfoDetail>Career</InfoDetail>
+            <InfoDetail>Blog</InfoDetail>
+            <InfoDetail>Contact Us</InfoDetail>
+          </AllListItems>
         </InfoList>
-        <MediaIconContainer>
-          <MediaIconBorder>
-            <FaFacebookF style={{ color: "white", padding: "6px" }} />
-          </MediaIconBorder>
-          <MediaIconBorder>
-            <FaTwitter style={{ color: "white", padding: "6px" }} />
-          </MediaIconBorder>
-          <MediaIconBorder>
-            <FaFacebookF style={{ color: "white", padding: "6px" }} />
-          </MediaIconBorder>
-        </MediaIconContainer>
+        <SocialContainer>
+          <MediaIconContainer>
+            <FaFacebookF
+              style={{
+                border: "1px white solid",
+                borderRadius: "50%",
+                padding: "5px",
+              }}
+            />
+          </MediaIconContainer>
+          <MediaIconContainer>
+            <FaTwitter
+              style={{
+                border: "1px white solid",
+                borderRadius: "50%",
+                padding: "5px",
+              }}
+            />
+          </MediaIconContainer>
+          <MediaIconContainer>
+            <FaInstagram
+              style={{
+                border: "1px white solid",
+                borderRadius: "50%",
+                padding: "5px",
+              }}
+            />
+          </MediaIconContainer>
+        </SocialContainer>
         <Copyright>
           &copy; Copyright 2018 Huddle. All rights reserved.
         </Copyright>
-      </div>
+      </FooterContainer>
     </Wrapper>
   );
 }

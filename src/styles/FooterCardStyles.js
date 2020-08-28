@@ -18,6 +18,10 @@ export const Wrapper = styled.div`
     padding: 2rem 10rem 0 10rem;
     left: 25%;
     right: 25%;
+    top: -15%;
+  }
+  @media (min-width: 375px) {
+    top: -20%;
   }
 `;
 
